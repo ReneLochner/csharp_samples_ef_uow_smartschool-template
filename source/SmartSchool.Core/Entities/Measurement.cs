@@ -15,5 +15,9 @@ namespace SmartSchool.Core.Entities
         public DateTime Time { get; set; }
         public double Value { get; set; }
 
+        public override string ToString()
+        {
+            return $"{nameof(Sensor)}: {Sensor.Name}, {nameof(Time)}: {Time}, {nameof(Value)}: {Value}";
+        }
     }
 }
